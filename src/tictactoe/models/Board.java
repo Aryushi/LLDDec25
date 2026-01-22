@@ -18,6 +18,14 @@ public class Board {
         }
     }
 
+    public void printBoard(){
+        for(List<Cell> row: board){
+            for(Cell cell : row){
+                cell.display();
+            }
+            System.out.print("\n");
+        }
+    }
     public Board(int size, List<List<Cell>> board) {
         this.dimension = size;
         this.board = board;
